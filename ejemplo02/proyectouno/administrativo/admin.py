@@ -11,8 +11,10 @@ class EstudianteAdmin(admin.ModelAdmin):
     # por cada registro
     # se deja de usar la representación (str)
     # de la clase
+    # no debo usar el parentecis para llamar a los métodos
     list_display = ('nombre', 'apellido', 'cedula', 'edad',
         'tipo_estudiante', 'obtener_anio_nacimiento')
+    
     search_fields = ('nombre', 'cedula', 'apellido')
 
 # admin.site.register se lo altera
